@@ -13,6 +13,14 @@ contract('Greeter', () => {
             const actual = await greeter.greet();
             assert.equal(actual, expected, "greeted with 'Hello World!'")
         })
+    });
+
+    describe('own()', () => {
+        it('returns the adress of the owner', async () => {
+            const greeter = await GreeterContract.deployed();
+            const owner = await greeter.owner();
+            assert(owner,'the current owner');
+        })
     })
 });
 
