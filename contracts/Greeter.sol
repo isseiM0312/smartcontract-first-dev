@@ -1,5 +1,7 @@
 pragma solidity 0.5.16;
 
+import "openzeppelin-solidity/contracts/access/Ownable.sol" ;
+
 contract Greeter {
     string private _greeting = 'Hello World!';
     address private _owner;
