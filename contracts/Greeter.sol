@@ -1,8 +1,6 @@
 pragma solidity >= 0.4.0 < 0.9.0;
 
-import "openzeppelin-solidity/contracts/access/Ownable.sol" ;
-
-contract Greeter is Ownable {
+contract Greeter {
     string private _greeting = 'Hello World!';
     address private _owner;
 
